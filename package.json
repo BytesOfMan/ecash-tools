@@ -1,0 +1,18 @@
+{
+    "name": "joey-tools",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha",
+        "changeprefix": "node scripts/changeCashaddrPrefix.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "assert": "^2.0.0",
+        "colors": "^1.4.0",
+        "ecashaddrjs": "^1.0.7",
+        "mocha": "^10.2.0"
+    }
+}
