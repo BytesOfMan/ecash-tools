@@ -1,7 +1,9 @@
+'use strict';
 const { expand } = require('../src/utils');
 const { changeAddressPrefix } = require('../src/address');
 const colors = require('colors');
-const { address, newPrefix } = require('../inputs/changeCashaddrPrefixInputs');
+const { changeCashaddrPrefix } = require('../inputs');
+const { address, newPrefix } = changeCashaddrPrefix;
 
 let result;
 try {

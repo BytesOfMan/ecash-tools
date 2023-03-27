@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "mocha",
-        "changeprefix": "node scripts/changeCashaddrPrefix.js"
+        "changeprefix": "node scripts/changeCashaddrPrefix.js",
+        "hex": "node scripts/parseHexStack.js"
     },
     "author": "",
     "license": "ISC",
