@@ -13,4 +13,19 @@ module.exports = {
             return cashaddr.encode(newPrefix, type, hash);
         }
     },
+    hash160ToAddress: function (hash, prefix = 'ecash', type = 'P2PKH') {
+        const buffer = Buffer.from(hash, 'hex');
+
+        // Because ecashaddrjs only accepts Uint8Array as input type, convert
+        const hash160ArrayBuffer = new ArrayBuffer(buffer.length);
+        const hash160Uint8Array = new Uint8Array(hash160ArrayBuffer);
+        for (let i = 0; i < hash160Uint8Array.length; i += 1) {
+            hash160Uint8Array[i] = buffer[i];
+        }
+
+        // Encode ecash: address
+        const ecashAddr = cashaddr.encode(prefix, type, hash160Uint8Array);
+
+        return ecashAddr;
+    },
 };

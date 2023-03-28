@@ -6,6 +6,7 @@
     "scripts": {
         "test": "mocha",
         "changeprefix": "node scripts/changeCashaddrPrefix.js",
+        "getaddress": "node scripts/getAddressFromHash160.js",
         "hex": "node scripts/parseHexStack.js"
     },
     "author": "",
@@ -13,7 +14,7 @@
     "dependencies": {
         "assert": "^2.0.0",
         "colors": "^1.4.0",
-        "ecashaddrjs": "^1.0.7",
+        "ecashaddrjs": "^1.1.0",
         "mocha": "^10.2.0"
     }
 }
